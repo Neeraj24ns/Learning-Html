@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html Practical-4</title>
     <link rel="icon" type="image/jpg" sizes="32x32" href="E:\FILE\neeraj.jpg">
+<style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+
 </head>
 <body>
-    
+    <h1 style="text-align: center;">Responsive Image Banner</h1>
+
+    <picture class="banner">
+        <source
+        media="(min-width: 1024px)"
+        srcset="E:\FILE\neeraj.jpg">
+
+        <source
+        media="(min-width: 600px)"
+        srcset="E:\FILE\photomadhu.jpeg">
+
+        <img
+        src="E:\FILE\prsu logo.jfif"
+        alt="Responsive Banner Image">
+
+    </picture>
+
 </body>
 </html>
