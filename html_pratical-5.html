@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html pratical-5</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="E:\FILE\neeraj.jpg">
+<style>
+
+    body{
+        background-color: rgb(170, 138, 245);
+        text-align: center;
+    }
+
+    img{
+        border: 5px solid black;
+        border-radius: 10px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+   <h1 style="text-align: center; color: blue; text-decoration: underline;">MAP IMAGE</h1>
+   <p>click here to view map</p>
+
+   <img
+    src="E:\FILE\neeraj.jpg"
+    alt="Map Image"
+    usemap="#neeraj"
+    width="600"
+    height="400">
+
+
+    <map name="neeraj">
+
+        <area 
+        shape="rect"
+        coords="34,44,270,350"
+        alt="Neeraj1"
+        href="html_practical-3.html">
+
+    <area 
+        shape="circle"
+        coords="337,300,44"
+        alt="neeraj2"
+        href="html_pratical-4.html">  
+    
+    </map>
+
+
+</body>
+</html>
