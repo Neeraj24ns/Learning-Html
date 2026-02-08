@@ -8,19 +8,77 @@
 </head>
 <body>
     <form action="/submit" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Full Name">
 <br>
 <br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="Enter your Email id" required>
+
+    <br>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
 <br>
 <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="18" max="100" placeholder="Age" required>
 <br>
 <br>
-        <button type="submit">Submit</button>
-    </form>
+<label for="birthdate">Birth Date:</label>
+<input type="date" id="birthdate" name="birthdate" required>
+<br>
+<br>
+<label for="time">Time:</label>
+<input type="time" id="time" name="time">
+<br>
+<br>
+<label for="color">Favorite Color:</label>
+<input type="color" id="color" name="color">
+<br>
+<br>
+<label for="volume">Volume:</label>
+<input type="range" id="volume" name="volume" min="0" max="100">
+<br>
+<hr>
+<lable>
+    <input type="checkbox" name="Subscribe" value="yes">
+    Subscribe to our channel
+</lable>
+<hr>
+<fieldset>
+    <legend>Gender:</legend>
+    <label>
+    <input type="radio" name="gender" value="male" checked>Male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="female">Female
+    </label>
+    <label>
+        <input type="radio" name="gender" value="other">Other
+    </label>
+</fieldset>
+<hr>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+    <option value="">Select a Country</option>
+    <option value="ind">India</option>
+    <option value="us">America</option>
+    <option value="uk">United Kingdom</option>  
+    <option value="aus">Australia</option>
+</select>
+<hr>
+<label for="message">Message:</label>
+<br>
+<textarea id="message" name="message" rows="5" cols="30" placeholder="Enter your Message"></textarea>
+<hr>
+<label for="file">Upload your file:</label>
+<input type="file" id="file" name="file" accept=".jpg, .png, .pdf">   
+
+<button type="submit">Submit Form</button>
+<button type="reset">Reset Form</button>
+</form>
 </body>
 </html>
