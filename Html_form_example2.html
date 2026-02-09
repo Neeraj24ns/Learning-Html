@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form example 2</title>
+    <link rel="icon" type="image/png" sizes="32*32" href="E:\FILE\neeraj.jpg"></link>
+</head>
+<body>
+    <form action="/order" method="post">
+        <h2>CheckOut Form</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="date">Delivery Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <br>
+        <label for="time">Delivery Time:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+        <br>
+        <label for="payment">Payment method</label>
+        <select id="payment" name="payment" required>
+            <option value="select">Select payment mode</option>
+            <option value="cash">Cash on Delivery</option>
+            <option value="credit">Credit Card</option>
+            <option value="UPI">UPI Pay</option>
+        </select>
+        <br>
+        <br>
+       <label for="message">
+        <input type="checkbox" required> I agree to term and condition 
+       </label><br><br>
+<button type="submit">Place Order</button>
+
+    </form>
+
+
+
+</body>
+</html>
