@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html SVG Graphics Example</title>
+    <link rel="icon" type="image/png" sizes="32*32" href="E:\FILE\neeraj.jpg">
+</head> 
+<body>
+    <div class="box">
+        <h2>Dashboard Sales Chart</h2>
+        <svg width="600" height="350">
+
+            <rect width="600" height="350" fill="white"/>
+
+            <rect x="40" y="40" width="520" width="260"
+            fill="none"
+            stroke="#cccccc"
+            stroke-width="2"/>
+
+            <line x1="80" y1="50" x2="80" y2="280"
+            stroke="#333"
+            stroke-width="2"/>
+
+            <line x1="80" y1="280" x2="540" y2="280"
+            stroke="#333"
+            stroke-width="2"/>
+
+            <rect x="120" y="160" width="50" height="120" fill="#4caf50"/>
+            <rect x="200" y="120" width="50" height="160" fill="#2196f3"/>
+            <rect x="280" y="180" width="50" height="100" fill="#ff9800"/>
+            <rect x="360" y="90" width="50" height="190" fill="#e91e63"/>
+
+            <path d="M 145 160 Q 225 100 305 180 T 385 90"
+            stroke="black" 
+            stroke-width="2"
+            fill="none"/>
+
+            <circle cx="145" cy="160" r="5" fill="black"/>
+            <circle cx="225" cy="120" r="5" fill="black"/>
+            <circle cx="305" cy="180" r="5" fill="black"/>
+            <circle cx="385" cy="90" r="5" fill="black"/>
+
+            <text x="130" y="300">Q1</text>
+            <text x="210" y="300">Q2</text>
+            <text x="290" y="300">Q3</text>
+            <text x="370" y="300">Q4</text>
+
+            <text x="200" y="30"
+            font-size="22"
+            fill="#333">Annual Sales Report</text>
+
+        </svg>
+    </div>
+</body>
+</html>
