@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html ARIA Labels</title>
+    <link rel="icon" type="image/png" sizes="32*32" href="E:\FILE\neeraj.jpg">
+</head>
+<body>
+    <button aria-label="Close dialog">Close</button>
+
+    <div role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div aria-live="polite" aria-atomic="true" id="status"></div>
+
+    <input type="text" aria-describedby="help-text"><br>
+    <span id="help-text">Enter your username</span>
+<br>
+<br>
+    <div aria-hidden="true">Hidden from Screen Readers</div>
+
+    <input type="text" aria-required="true" required>
+
+
+</body>
+</html>
